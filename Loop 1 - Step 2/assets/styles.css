@@ -1,0 +1,174 @@
+* {
+  padding: 0px;
+  margin:  0px;
+}
+
+body{
+  background-image: url("./img/background.jpg");
+}
+
+.container{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  height: 40rem;
+}
+
+ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  width: 30%;
+  height: 20rem;
+  background-color: white;
+}
+
+li{
+  display: flex;
+  padding: 0.5rem;
+  width: 80%;
+  height: 5rem;
+  justify-content: flex-start;
+  cursor: pointer;
+}
+
+.visa,.mastercard,.maestro{
+  transition: background-color 0.2s;
+}
+
+.visa:hover{
+  background-color: #f4f4f4;
+}
+
+.mastercard:hover{
+  background-color: #f4f4f4;
+}
+.maestro:hover{
+  background-color: #f4f4f4;
+}
+
+h4{
+  text-transform: uppercase;
+  font-family: 'Roboto',sans-serif;
+  font-size: 120%;
+  letter-spacing: 2px;
+  display: flex;
+  text-align: center;
+}
+
+.cards{
+  display: flex;
+  align-items: center;
+  width: 80px;
+  height: auto;
+}
+
+.name{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 1.5rem;
+  text-transform: uppercase;
+  font-family: 'Roboto',sans-serif;
+}
+
+.background-button{
+  background-color: #598bdd;
+  width: auto;
+  height: 1rem;
+}
+
+.btn{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  height: 7rem;
+  width: 100%;
+  color: white;
+  text-transform: uppercase;
+  font-family: 'Roboto',sans-serif;
+  letter-spacing: 2px;
+  background-color: #598bdd;
+}
+
+.next-step{
+  display: flex;
+  flex-direction: row;
+  width:50%;
+  justify-content:center;
+  align-items: center;
+  height: 5rem;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+}
+
+.visa{
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+
+.mastercard{
+
+  border-bottom: 1px solid black;
+
+}
+
+
+.dot{
+
+  width: 10px;
+  height: 10px;
+  border:1px solid black;
+  border-radius: 50%;
+  color: black;
+  background-color: black;
+
+}
+
+.check{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height:2rem;
+  margin-left: 8rem;
+}
+
+/*Media querie*/
+
+@media only screen and (max-width:578px){
+
+  ul{
+    width: 100%;
+    height: auto;
+
+  }
+
+  .check{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: auto 50px;
+
+  }
+
+  .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    height: 5rem;
+    width: 100%;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Roboto',sans-serif;
+    letter-spacing: 2px;
+    background-color: #598bdd;
+  }
+}
